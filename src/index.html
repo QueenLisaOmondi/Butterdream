@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/index.css">
+    <title>Butterdream</title>
+</head>
+<body>
+    <header class="pastry-header">
+        <!-- head image & Site Name -->
+        <div class="head">
+            <img src="/images/background.jpg" alt="Bakery header" class="header-image">
+            <h1>Butterdream</h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Our Pastries</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Order Now</a></li>
+            </ul>
+        </nav>
+
+        <!-- CTA Button (e.g., for cart/login) -->
+        <div class="header-cta">
+            <a href="#cart" class="cart-btn">
+                🛒 Cart <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <div class="main-container" id="products">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Our Signature Pastries</h2>
+        <div class="pastry-container">
+            <!-- Croissant -->
+            <div class="div1">
+                <img 
+                    src="/images/croisant.jpg" 
+                    srcset="/images/croisant.jpg 480w, /images/croisant.jpg 768w, /images/croisant.jpg 1200w"
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1200px"
+                    alt="French Butter Croissant" 
+                    class="pastry-img">
+                <div class="pastry-info">
+                    <h3 class="pastry-name">French Butter Croissant</h3>
+                    <p class="pastry-price">KSH 450</p>
+                    <p class="pastry-desc">Buttery, flaky, golden perfection.</p>
+                </div>
+            </div>
+            <!-- Chocolate Bread -->
+            <div class="div2">
+                <img 
+                    src="/images/chocolate-bread-small.jpg" 
+                    srcset="/images/chocolate-bread.jpg 480w, /images/chocolate-bread.jpg 768w, /images/chocolate-bread.jpg 1200w"
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1200px"
+                    alt="Chocolate Bread" 
+                    class="pastry-img">
+                <div class="pastry-info">
+                    <h3 class="pastry-name">Chocolate Swirl Bread</h3>
+                    <p class="pastry-price">KSH 600</p>
+                    <p class="pastry-desc">Rich, indulgent chocolate swirls.</p>
+                </div>
+            </div>
+            <!-- Cinnamon Roll -->
+            <div class="div3">
+                <img 
+                    src="/images/cinamon-roll.jpg" 
+                    srcset="/images/cinamon-roll.jpg 480w, /images/cinamon-roll.jpg 768w, /images/cinamon-roll.jpg 1200w"
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1200px"
+                    alt="Cinnamon Roll" 
+                    class="pastry-img">
+                <div class="pastry-info">
+                    <h3 class="pastry-name">Cinnamon Spice Roll</h3>
+                    <p class="pastry-price">KSH 550</p>
+                    <p class="pastry-desc">Warm, gooey, spiced delight.</p>
+                </div>
+            </div>
+            <!-- Éclair -->
+            <div class="div4"> 
+                <img 
+                    src="/images/eclair.jpg" 
+                    srcset="/images/eclair.jpg 480w, /images/eclair.jpg 768w, /images/eclair.jpg 1200w"
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1200px"
+                    alt="Chocolate Éclair" 
+                    class="pastry-img">
+                <div class="pastry-info">
+                    <h3 class="pastry-name">Chocolate Éclair</h3>
+                    <p class="pastry-price">KSH 500</p>
+                    <p class="pastry-desc">Cream-filled, chocolate-dipped elegance.</p>
+                </div>
+            </div>
+            <!-- Macaron -->
+            <div class="div5"> 
+                <img 
+                    src="/images/macaroon.jpg" 
+                    srcset="/images/macaroon.jpg 480w, /images/macaroon.jpg 768w, /images/macaroon.jpg 1200w"
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1200px"
+                    alt="French Macaron" 
+                    class="pastry-img">
+                <div class="pastry-info">
+                    <h3 class="pastry-name">French Macaron Box (6pc)</h3>
+                    <p class="pastry-price">KSH 1200</p>
+                    <p class="pastry-desc">Delicate, colorful, melt-in-mouth.</p>
+                </div>
+            </div>
+            <!-- Danish -->
+            <div class="div6">
+                <img 
+                    src="/images/fruity-danish.jpg" 
+                    srcset="/images/fruity-danish.jpg 480w, /images/fruity-danish.jpg 768w, /images/fruity-danish.jpg 1200w"
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1200px"
+                    alt="Danish Pastry" 
+                    class="pastry-img">
+                <div class="pastry-info">
+                    <h3 class="pastry-name">Fruit Danish</h3>
+                    <p class="pastry-price">KSH 650</p>
+                    <p class="pastry-desc">Fruit-topped, buttery layers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <!-- Shopping Cart Section -->
+        <section class="cart-section" id="cart">
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="/images/croisant.jpg" alt="Croissant">
+                    <div>
+                        <h3>French Butter Croissant</h3>
+                        <p>KSH 450</p>
+                    </div>
+                    <div class="quantity-adjuster">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="/images/chocolate-bread.jpg" alt="Chocolate Bread">
+                    <div>
+                        <h3>Chocolate Swirl Bread</h3>
+                        <p>KSH 600</p>
+                    </div>
+                    <div class="quantity-adjuster">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>KSH 1,050</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section" id="contact">
+            <h2>Place Your Order</h2>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <p>1 x French Butter Croissant - KSH 450</p>
+                    <p>1 x Chocolate Swirl Bread - KSH 600</p>
+                    <p><strong>Total: KSH 1,050</strong></p>
+                </div>
+                <button type="submit" class="submit-btn">Place Order</button>
+            </form>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <h2>About Our Bakery</h2>
+            <div class="about-grid">
+                <div>
+                    <p>Welcome to Butterdream, Kilifi's premier artisanal bakery since 2015. Our passion for quality ingredients and traditional baking techniques shines through in every bite.</p>
+                    <p>All our products are made fresh daily using locally-sourced ingredients whenever possible. We take pride in our craft and hope you can taste the love in every creation.</p>
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +254 444 333 654</p>
+                    <p><i class="fas fa-envelope"></i> hello@butterdream.co.ke</p>
+                </div>
+                <div>
+                    <h3>Our Kilifi Location</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.272632726653!2d39.84968231526148!3d-3.630801943359512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400c3b9f1a1e07%3A0x1c3b6d6e1b5e5b1f!2sKilifi%20Town%2C%20Kenya!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <h3>Opening Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday - Friday</span> <span>7am - 7pm</span></li>
+                        <li><span>Saturday</span> <span>8am - 8pm</span></li>
+                        <li><span>Sunday</span> <span>8am - 6pm</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">What are your delivery hours in Kilifi?</div>
+                <p>We deliver daily from 9am to 6pm within Kilifi and surrounding areas. Orders placed after 3pm will be delivered the next day.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What payment methods do you accept?</div>
+                <p>We accept M-Pesa, all major credit cards, and cash on delivery.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I place a custom order?</div>
+                <p>Yes! We specialize in custom cakes and pastries. Please contact us at least 48 hours in advance for special requests.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer catering for events?</div>
+                <p>Absolutely! We provide pastry platters and dessert tables for weddings, corporate events, and special occasions throughout Kilifi County.</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">"The croissants at Butterdream rival those I've had in Paris! Worth every shilling for that buttery, flaky perfection."</div>
+                    <div class="testimonial-author">- Jamila K., Kilifi</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">"I order their macarons for all our special occasions. The perfect balance of crisp and chewy with amazing flavors."</div>
+                    <div class="testimonial-author">- Omar S., Mombasa</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">"Butterdream made our wedding cake and dessert table. Our guests are still talking about it months later!"</div>
+                    <div class="testimonial-author">- Aisha & Ben, Watamu</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <h2>Join Our Newsletter</h2>
+            <p>Subscribe to receive updates on new products and special offers!</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 Butterdream, Kilifi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
